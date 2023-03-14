@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('Hola Mundo'){
 			steps{	
-				sh 'echo Hola Mundo de prueba'
+				sh 'token.sh'
 			}
 		}
 	}

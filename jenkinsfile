@@ -5,9 +5,10 @@ pipeline{
 	}
 	stages{
 		stage('Creacion de token'){
-			steps{	
-				sh 'echo "David">${nombre}'
-				sh 'echo "Hola" ${nombre} ", ¿Cómo estás?"'
+			steps{
+				sh 'export name=$(echo "David")'
+				sh '$name>${nombre}'
+				sh 'hola ${nombre} , ¿Cómo estás?'
 			}
 		}
 	}

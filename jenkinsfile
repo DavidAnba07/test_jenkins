@@ -1,13 +1,11 @@
 pipeline{
 	agent any
 	parameters{
-		string(name : 'nombre', defaultValue: 'David' , description: 'tag para el nombre')
+		string(name : 'nombre' , description: 'tag para el nombre')
 	}
 	stages{
 		stage('Creacion de token'){
 			steps{
-				sh 'export name=$(echo "David")'
-				sh '$name>${nombre}'
 				sh 'hola ${nombre} , ¿Cómo estás?'
 			}
 		}

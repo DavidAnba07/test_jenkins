@@ -6,7 +6,10 @@ pipeline{
 	stages{
 		stage('Creacion de token'){
 			steps{
-				sh 'hola ${nombre} , ¿Cómo estás?'
+				sh 'Hola Mundo'
+			}
+			steps{
+				sh 'Hola ${nombre} , ¿Cómo estás?'
 			}
 		}
 	}

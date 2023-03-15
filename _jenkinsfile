@@ -1,0 +1,10 @@
+pipeline{
+	agent any
+	stages{
+		stage('Creacion de token'){
+			steps{	
+				sh 'bash token.sh'
+			}
+		}
+	}
+}

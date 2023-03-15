@@ -4,10 +4,14 @@ pipeline{
 		string(name : 'nombre' , description: 'tag para el nombre')
 	}
 	stages{
-		stage('Creacion de token'){
+		stage('Hola mundo'){
 			steps{
-				sh 'Hola Mundo'
+				sh 'echo Hola Mundo'
 			}
+		}
+
+		stage('Nombre'){
+
 			steps{
 				sh 'Hola ${nombre} , ¿Cómo estás?'
 			}

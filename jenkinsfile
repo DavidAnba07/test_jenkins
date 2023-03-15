@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	parameters{
-		string(name:'nombre',description: 'tag para el nombre')
+		string(name : 'nombre', defaultValue: 'David' , description: 'tag para el nombre')
 	}
 	stages{
 		stage('Creacion de token'){

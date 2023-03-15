@@ -13,7 +13,7 @@ pipeline{
 		stage('Nombre'){
 
 			steps{
-				sh 'Hola ${nombre} , ¿Cómo estás?'
+				sh 'echo 'Hola ${nombre} , ¿Cómo estás?''
 			}
 		}
 	}
